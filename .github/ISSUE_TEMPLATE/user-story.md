@@ -1,18 +1,28 @@
----
-name: User Story
-about: Create a new user story
-title: "[User Story] "
-labels: user story
-assignees: ''
----
-
-**User Story**
-As a [type of user], I want [some goal] so that [some reason].
-
-**Acceptance Criteria**
-- [ ] Criterion 1
-- [ ] Criterion 2
-- [ ] Criterion 3
-
-**Additional Context**
-Add any other context, screenshots, or notes here.
+name: 🚀📄 Suggestion (User Story)
+description: Suggest an idea for this project as a user story
+title: 'As a ____, I want ____, so that I can ____'
+labels: ['suggestion']
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: 📝 Description
+      description: Describe your suggestion more in detail - what do you want to happen?
+    validations:
+      required: true
+  - type: textarea
+    id: criteria
+    attributes:
+      label: ✅ Acceptance Criteria
+      description: What needs to be done for this user story to be considered finished?
+      placeholder: |
+        - [ ] Does the horse donkey?
+        - [ ] Flux capacitor charged
+        - [ ] Can reach 88 MPH
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: 💡 Additional context
+      description: Add any other context or screenshots about the suggestion here.
